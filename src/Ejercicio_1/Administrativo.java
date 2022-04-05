@@ -20,7 +20,7 @@ public class Administrativo extends Empleado {
     }
 
     public Administrativo(String nombre, String apellidos, String dni, String direccion,
-                          LocalDate antiguedad, int telf, double salario, int fax, Despacho despacho) {
+                          LocalDate antiguedad, int telf, double salario) {
         super(nombre, apellidos, dni, direccion, antiguedad, telf, salario);
         this.fax = fax;
         this.despacho = despacho;
@@ -53,7 +53,7 @@ public class Administrativo extends Empleado {
 
     @Override
     public String toString() {
-        return "El empleado trabaja en el " + despacho +
+        return super.toString() + "\n El empleado trabaja en el " + despacho +
                 ",su numero de fax es " + fax + "y su supervisor es " + supervisor;
     }
 }

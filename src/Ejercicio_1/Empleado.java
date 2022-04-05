@@ -25,8 +25,6 @@ public abstract class Empleado {
 
     //constructor
 
-    public Empleado(){}
-
     public Empleado (String nombre, String apellidos, String dni, String direccion, LocalDate antiguedad,
                      int telf, double salario, Empleado supervisor){
 
@@ -87,6 +85,6 @@ public abstract class Empleado {
         return "El Empleado es " + nombre + apellidos + ", con dni " + dni + ' ' + ", telefono " + telf +
                 " y salario. " + salario +'\''+
                 "Vive en " + direccion +
-                "y lleva en la empresa desde  " + antiguedad;
+                "y lleva en la empresa desde  " + antiguedad + ".";
     }
 }
